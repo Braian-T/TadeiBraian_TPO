@@ -15,13 +15,13 @@ a:hover, a:focus{
 
 /*BARRA DE NAVEGACION CON FLEXBOX*/
 .navbar{
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     background-color: #961443;
-    overflow: visible;
+    overflow: hidden;
     height: 80px;
     padding: 10px;
 }
@@ -43,12 +43,16 @@ a:hover, a:focus{
     border-radius: 10px;
     padding: 5px;
 }
+.nav_buttons a:hover, .nav_buttons a:focus{
+    color: #961443;
+}
 
 /*GRID*/
 .container{
+    width: auto;
     display: grid;
     grid-gap: 20px;
-    padding: 20px;
+    padding: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto repeat(3, 50vh);
     background-color: #fffdf6;
@@ -57,14 +61,59 @@ a:hover, a:focus{
     grid-column: 1 / span 3;
     height: 75vh;
     padding: 20px;
-    border-style: solid;
+    border-style:hidden;
     border-color: #202f73;
-    color: black;
     border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://i.ibb.co/QCBFGYn/bibliotekarie-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 0.2s;
+    margin: 20px;
+}
+.landing:hover{
+    opacity: 0.9;
+}
+.landing_content{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+.landing_title{
+    align-self: center;
+    text-align: right;
+    font-size: 2em;
+    font-weight: lighter;
+    transition: 0.2s;
 }
 .landing_p{
     line-height: 1.5;
     margin: 1em 0 2em;
+    font-size: 2em;
+    font-weight: lighter;
+    transition: 0.2s;
+}
+.landing_button{
+    align-self: center;
+    color: #fffdf6;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 5px;
+    transition: 0.2s;
+}
+.landing_p:hover, .landing_title:hover, .landing_button:hover{
+    text-shadow: 4px 4px 3px black;
+}
+.landing_p:hover, .landing_title:hover{
+    font-size: 2.1em;
+}
+.landing_button:hover, .landing_button:focus{
+    transform: scale(1.3,1.3);
+    color: #fffdf6;
 }
 .item{
     border-style: solid;
@@ -110,20 +159,24 @@ a:hover, a:focus{
         color: #fffdf6;
         padding: 12px 16px;
         text-decoration: none;
-        display: block;
+        font-size: 125%;
+        /* display: block; */
+    }
+    .dropcontent a:hover {
+        color:#202f73;
     }
     .dropdown:hover .dropcontent{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
     }
     .dropdown:hover .dropbtn {
         background-color: #fffdf6;
     }
-
-
-    #myNavLinks a:hover {
-        color:#202f73;
+    .nav_buttons a{
+        font-size: 150%;
     }
-
     .landing, .item{
         grid-column: 1 / span 3;
     }
@@ -139,9 +192,6 @@ a:hover, a:focus{
         justify-content: space-between;
         padding: 5px;
     }
-    /*
-
-    */
     .contenido4, .contenido5, .contenido6{
         display:none;
     }
@@ -169,6 +219,9 @@ a:hover, a:focus{
         grid-row: 4/5;
     }
     .nav_links *{
+        font-size: 125%;
+    }
+    .nav_buttons a{
         font-size: 150%;
     }
 }
@@ -190,7 +243,10 @@ a:hover, a:focus{
     .boton_todos{
         grid-column: 1 / span 3;
         grid-row: 4/5;
-    } 
+    }
+    .nav_links *{
+        font-size: 125%;
+    }
 }
 @media only screen and (min-width: 1200px){
     .container{
@@ -209,6 +265,9 @@ a:hover, a:focus{
         grid-row: 4/5;
     }
     .nav_links *{
+        font-size: 150%;
+    }
+    .nav_buttons a{
         font-size: 200%;
     }
 }
@@ -233,5 +292,5 @@ a:hover, a:focus{
     justify-content: space-around;
     background-color: #961443;
     height: 40px;
-    padding: 10px;
+    padding: 0px;
 }
