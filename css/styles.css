@@ -56,21 +56,22 @@ a:hover, a:focus{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto repeat(3, 50vh);
     background-color: #fffdf6;
+    margin: 20px;
 }
 .landing{
     grid-column: 1 / span 3;
-    height: 75vh;
+    height: auto;
     padding: 20px;
     border-style:hidden;
     border-color: #202f73;
     border-radius: 5px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://i.ibb.co/QCBFGYn/bibliotekarie-2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(https://i.ibb.co/QCBFGYn/bibliotekarie-2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    transition: 0.2s;
-    margin: 20px;
+    transition: 0.3s;
+    /* margin: 20px; */
 }
 .landing:hover{
     opacity: 0.9;
@@ -87,40 +88,80 @@ a:hover, a:focus{
     align-self: center;
     text-align: right;
     font-size: 2em;
-    font-weight: lighter;
-    transition: 0.2s;
+    font-weight: 300;
+    transition: 0.3s;
 }
 .landing_p{
     line-height: 1.5;
     margin: 1em 0 2em;
     font-size: 2em;
-    font-weight: lighter;
-    transition: 0.2s;
+    font-weight: 200;
+    transition: 0.3s;
 }
 .landing_button{
     align-self: center;
     color: #fffdf6;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: 500;
     padding: 5px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .landing_p:hover, .landing_title:hover, .landing_button:hover{
     text-shadow: 4px 4px 3px black;
 }
-.landing_p:hover, .landing_title:hover{
-    font-size: 2.1em;
+.landing_title:hover{
+    font-size: 2.02em;
 }
 .landing_button:hover, .landing_button:focus{
     transform: scale(1.3,1.3);
     color: #fffdf6;
 }
 .item{
-    border-style: solid;
-    border-color: #202f73;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 5px 15px;
     color: black;
     border-radius: 5px;
+    transition: 0.3s;
+}
+.item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translate(5px,5px);
+}
+.item_header{
+    align-self: flex-end;
+    font-size: 1.5vw;
+}
+.item_title{
+    margin-top: auto;
+    font-size: 1.8vw;
+}
+.item_footer{
+    font-size: 1vw;
+}
+.contenido1{
+    background-image: url(../img/placeholder_articulo.jpg);
+}
+.contenido2{
+    background-image: url(../img/placeholder_analisis.png);
+}
+.contenido3{
+    background-image: url(../img/placeholder_data.jpg);
+}
+.contenido4{
+    background-image: url(../img/placeholder_articulo.jpg);
+}
+.contenido5{
+    background-image: url(../img/placeholder_analisis.png);
+}
+.contenido6{
+    background-image: url(../img/placeholder_data.jpg);
 }
 .boton_todos{
     border-style: solid;
@@ -238,7 +279,7 @@ a:hover, a:focus{
         grid-column: 1 / span 3;
     }
     .contenido5, .contenido6{
-        display:inline-block;
+        display:flex;
     }
     .boton_todos{
         grid-column: 1 / span 3;
