@@ -5,7 +5,6 @@ body{
     font-family: 'League Spartan', sans-serif;
 }
 a{
-    padding: 1em;
     text-decoration: none;
     color: #fffdf6;
 }
@@ -26,6 +25,7 @@ a:hover, a:focus{
     padding: 10px;
 }
 .nav_links a{
+    padding: 1em;
     display: inline-block;
     text-align: center;
 }
@@ -71,7 +71,6 @@ a:hover, a:focus{
     background-size: cover;
     position: relative;
     transition: 0.3s;
-    /* margin: 20px; */
 }
 .landing:hover{
     opacity: 0.9;
@@ -120,13 +119,16 @@ a:hover, a:focus{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: white;
+    gap: 10px;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(80, 49, 13, 0.5);
+    background-blend-mode: multiply;
     border-style: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 5px 15px;
-    color: black;
+    color: #fffdf6;
+    text-shadow: 1px 1px 1px black;
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -136,14 +138,19 @@ a:hover, a:focus{
 }
 .item_header{
     align-self: flex-end;
-    font-size: 1.5vw;
+    font-size: 1.2em;
 }
 .item_title{
     margin-top: auto;
-    font-size: 1.8vw;
+    font-size: 2em;
+    font-weight: 500;
+}
+.item_title:hover{
+    color: #961443;
+    text-shadow: 1px 1px 2px #fffdf6;
 }
 .item_footer{
-    font-size: 1vw;
+    font-size: 0.9em;
 }
 .contenido1{
     background-image: url(../img/placeholder_articulo.jpg);
@@ -164,15 +171,53 @@ a:hover, a:focus{
     background-image: url(../img/placeholder_data.jpg);
 }
 .boton_todos{
-    border-style: solid;
-    border-color: #202f73;
-    padding: 10px;
-    color: black;
-    border-radius: 5px;
+    color: #202f73;
     grid-column: 1 / span 3;
     grid-row: 4 / 5;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+    transition: 0.3s;
 }
-
+.boton_todos:hover, .boton_todos:focus{
+    text-shadow: 1px 1px 1px black;
+    transform: ;
+}
+/*FOOTER CON FLEXBOX*/
+.footer{
+    background-color: #961443;
+    height: auto;
+    color: #fffdf6;
+}
+.footer_content{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer_head{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.footer_social{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    font-size: 150%;
+    transition: .5s;
+}
+.footer_social li{
+    margin: 0 10px;
+    align-self: flex-start;
+}
+.footer_cr{
+    color: black;
+}
 /*RESPONSIVE CON MEDIA QUERIES*/
 @media only screen and (max-width: 650px){
     .dropbtn {
@@ -201,7 +246,6 @@ a:hover, a:focus{
         padding: 12px 16px;
         text-decoration: none;
         font-size: 125%;
-        /* display: block; */
     }
     .dropcontent a:hover {
         color:#202f73;
@@ -216,7 +260,7 @@ a:hover, a:focus{
         background-color: #fffdf6;
     }
     .nav_buttons a{
-        font-size: 150%;
+        font-size: 125%;
     }
     .landing, .item{
         grid-column: 1 / span 3;
@@ -263,7 +307,7 @@ a:hover, a:focus{
         font-size: 125%;
     }
     .nav_buttons a{
-        font-size: 150%;
+        font-size: 125%;
     }
 }
 @media only screen and (min-width: 770px){
@@ -284,9 +328,6 @@ a:hover, a:focus{
     .boton_todos{
         grid-column: 1 / span 3;
         grid-row: 4/5;
-    }
-    .nav_links *{
-        font-size: 125%;
     }
 }
 @media only screen and (min-width: 1200px){
@@ -309,29 +350,6 @@ a:hover, a:focus{
         font-size: 150%;
     }
     .nav_buttons a{
-        font-size: 200%;
+        font-size: 150%;
     }
-}
-/*
-.contenido1{
-
-}
-.contenido2{
-    grid-area: contenido2;
-}
-.contenido3{
-    grid-area: contenido3;
-}
-*/
-
-.footer{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #961443;
-    height: 40px;
-    padding: 0px;
 }
