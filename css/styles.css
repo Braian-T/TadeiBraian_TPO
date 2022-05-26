@@ -1,136 +1,506 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Science</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/f7ff485356.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="navbar">
-        <div class="nav_logo"><a href="./index.html"><img src="./img/logo_placeholder.png" alt="International Science" height="70px"></a></div>
-        <div class="dropdown">
-            <div class="nav_links dropcontent">
-            <a href="./index.html">Inicio</a>
-            <a href="./articles.html">Artículos</a>
-            <a href="./journals.html">Revistas</a>
-            </div>
-            <a class="dropbtn">
-                <i class="fa-solid fa-bars"></i>
-            </a>
-        </div>
-            <div class="nav_buttons">
-                <a href="./subscription.html">Suscríbete</a>
-            </div>
-    </header>
-    <section class="container">
-        <div class="landing">
-            <div class="landing_content">
-                <h2 class="landing_title">TODA TU INFORMACIÓN CIENTÍFICA EN UN SOLO PORTAL</h2>
-                <p class="landing_p">Explora las últimas noticias científicas. Accede a decenas de fuentes de datos.<br>Echa un vistazo a las publicaciones más recientes en todas las áreas de la ciencia.<br>Todo en un único portal.</p>
-                <a href="./articles.html" class="landing_button">EXPLORA   <i class="fa-solid fa-arrow-right-long"></i></a>
-            </div>
-        </div>
-        <div class="item contenido1">
-            <div class="item_header">Artículos</div>
-            <a href="http://" class="item_title">Título del artículo 1</a>
-            <div class="item_footer">fecha de publicación</div>
-        </div>
-        <div class="item contenido2">
-            <div class="item_header">Análisis</div>
-            <a href="http://" class="item_title">Título del editorial 1</a>
-            <div class="item_footer">fecha de publicación</div>
-        </div>
-        <div class="item contenido3">
-            <div class="item_header">Datos</div>
-            <a href="http://" class="item_title">Título del set de datos 1</a>
-            <div class="item_footer">fecha de publicación</div>
-        </div>
-        <div class="item contenido4">
-            <div class="item_header">Artículos</div>
-            <a href="http://" class="item_title">Título del artículo 2</a>
-            <div class="item_footer">fecha de publicación</div>
-        </div>
-        <div class="item contenido5">
-            <div class="item_header">Análisis</div>
-            <a href="http://" class="item_title">Título del editorial 2</a>
-            <div class="item_footer">fecha de publicación</div>
-        </div>
-        <div class="item contenido6">
-            <div class="item_header">Datos</div>
-            <a href="http://" class="item_title">Título del set de datos 2</a>
-            <div class="item_footer">fecha de publicación</div>
-        </div>
-        <div class="boton_todos">Todos los artículos <i class="fa-solid fa-arrow-right-long"></i></div>
-    </section>
-    <br><br>
-    <h2 class="encabezado_revistas">REVISTAS ASOCIADAS</h2>
-    <br>
-    <section class="card_container">
-        <div class="card">
-            <img src="./img/logo_canadian.png" alt="Canadian Science Publishing" class="card_image">
-            <div class="card_title">Canadian Science Publishing</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias modi atque impedit velit vero in saepe debitis facere id fugiat vel consequatur quia est esse voluptatibus, asperiores voluptate adipisci totam!</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_ecociencia.png" alt="EcoCiencia" class="card_image">
-            <div class="card_title">EcoCiencia</div>
-            <div class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus saepe enim obcaecati deserunt quae molestias ut nam minus autem debitis, blanditiis sed iusto ad corporis! Accusamus illo alias earum error.</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_educacion.png" alt="Ciencia y Educación" class="card_image">
-            <div class="card_title">Ciencia y Educación</div>
-            <div class="card_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis molestiae quisquam commodi sint quam voluptas, sequi tempore, architecto ullam consectetur consequuntur quos provident fugit repudiandae est, eaque excepturi ratione omnis.</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_intresearch.png" alt="International Research" class="card_image">
-            <div class="card_title">International Research</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus magni voluptatum est placeat sed consectetur molestias delectus aliquam! Soluta doloribus error perspiciatis alias animi et ducimus repudiandae id quidem aliquam?</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_irjsetm.png" alt="IRJSETM" class="card_image">
-            <div class="card_title">International Research Journal of Science Engineering Technology and Management</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti dolore asperiores voluptate accusamus optio quam libero ea quidem, excepturi dolores, architecto iste voluptatum illo eum voluptas! Nisi repudiandae dolorum itaque?</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_jspg.png" alt="JSPG" class="card_image">
-            <div class="card_title">Journal of Science Policy & Governance</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore perferendis nihil, dolores commodi rem minus non velit repellat delectus doloremque obcaecati dignissimos quaerat itaque asperiores accusamus reiciendis ratione maxime.</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_latindex.png" alt="Latindex" class="card_image">
-            <div class="card_title">Latindex</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quam esse omnis, dolore commodi natus accusantium, voluptas atque, dolores a laborum! Aliquid deleniti quis inventore dolore ratione ad culpa saepe.</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_nucleos.png" alt="UNNOBA Núcleos" class="card_image">
-            <div class="card_title">UNNOBA Núcleos</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente corrupti error animi recusandae quisquam enim deserunt nam fuga necessitatibus iure, perspiciatis quibusdam quam provident illum? Accusantium veniam quis nisi!</div>
-        </div>
-        <div class="card">
-            <img src="./img/logo_science.png" alt="Science" class="card_image">
-            <div class="card_title">Science journals</div>
-            <div class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis numquam voluptate voluptatem similique nesciunt aliquam iusto distinctio. Ad assumenda vel perspiciatis dignissimos magnam fuga. Eum exercitationem magni aliquid aut ducimus.</div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer_content">
-            <h3 class="footer_head">International Science</h3>
-            <ul class="footer_social">
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
-            <div class="footer_links">
-                <a href="http://">Aviso legal y política de cookies</a>
-            </div>
-            <p class="footer_cr">Copyright &copy;2022 - Braian Tadei</p>
-        </div>
-    </footer>
-</body>
-</html>
+*{
+    margin: 0;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fffdf6;
+}
+a:hover, a:focus{
+    color:#202f73
+}
+
+/*BARRA DE NAVEGACION CON FLEXBOX*/
+.navbar{
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #961443;
+    overflow: hidden;
+    height: 80px;
+    padding: 10px;
+}
+.nav_links a{
+    padding: 1em;
+    display: inline-block;
+    text-align: center;
+}
+.nav_links a:active {
+    background-color: #fffdf6;
+    color: #961443;
+    border-radius: 20px;
+}
+.dropbtn{
+    display: none;
+}
+.nav_buttons{
+    display:inline-block;
+    background-color: #202f73;
+    border-radius: 10px;
+    padding: 5px;
+}
+.nav_buttons a:hover, .nav_buttons a:focus{
+    color: #961443;
+}
+
+/*GRID DE PAGINA INICIO*/
+.container{
+    width: auto;
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto repeat(3, 50vh);
+    background-color: #fffdf6;
+    margin: 20px;
+}
+.landing{
+    grid-column: 1 / span 3;
+    height: auto;
+    padding: 20px;
+    border-style:hidden;
+    border-color: #202f73;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(https://i.ibb.co/QCBFGYn/bibliotekarie-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: 0.3s;
+}
+.landing:hover{
+    opacity: 0.9;
+}
+.landing_content{
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+.landing_title{
+    align-self: center;
+    text-align: right;
+    font-size: 2em;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.landing_p{
+    line-height: 1.5;
+    margin: 1em 0 2em;
+    font-size: 2em;
+    font-weight: 200;
+    transition: 0.3s;
+}
+.landing_button{
+    align-self: center;
+    color: #fffdf6;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 5px;
+    transition: 0.3s;
+}
+.landing_p:hover, .landing_title:hover, .landing_button:hover{
+    text-shadow: 4px 4px 3px black;
+}
+.landing_title:hover{
+    font-size: 2.02em;
+}
+.landing_button:hover, .landing_button:focus{
+    transform: scale(1.3,1.3);
+    color: #fffdf6;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #96144462;
+    background-blend-mode: multiply;
+    border-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 5px 15px;
+    color: #fffdf6;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: translate(5px,5px);
+}
+.item_header{
+    align-self: flex-end;
+    font-size: 1.2em;
+}
+.item_title{
+    margin-top: auto;
+    font-size: 2em;
+    font-weight: 500;
+}
+.item_title:hover{
+    color: #961443;
+    text-shadow: 1px 1px 2px #fffdf6;
+}
+.item_footer{
+    font-size: 0.9em;
+}
+.contenido1{
+    background-image: url(../img/placeholder_articulo.jpg);
+}
+.contenido2{
+    background-image: url(../img/placeholder_analisis.png);
+}
+.contenido3{
+    background-image: url(../img/placeholder_data.jpg);
+}
+.contenido4{
+    background-image: url(../img/placeholder_articulo.jpg);
+}
+.contenido5{
+    background-image: url(../img/placeholder_analisis.png);
+}
+.contenido6{
+    background-image: url(../img/placeholder_data.jpg);
+}
+.boton_todos{
+    grid-column: 1 / span 3;
+    grid-row: 4 / 5;
+    text-align: right;
+}
+.boton_todos a{
+    color: #202f73;
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+    transition: 0.3s;
+}
+.boton_todos:hover, .boton_todos:focus{
+    text-shadow: 1px 1px 1px black;
+    transform: translate(15px);
+}
+/*FOOTER CON FLEXBOX*/
+.footer{
+    background-color: #961443;
+    height: auto;
+    color: #fffdf6;
+}
+.footer_content{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer_head{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.footer_social{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    font-size: 150%;
+    transition: .5s;
+}
+.footer_social li{
+    margin: 0 10px;
+    align-self: flex-start;
+}
+.footer_cr{
+    color: black;
+}
+/* GALERIA DE REVISTAS CON FLEXBOX CARDS */
+.encabezado_revistas{
+    text-align: center;
+    color: #202f73;
+    font-size: 2em;
+    font-weight: 400;
+    transition: 0.3s;
+    text-shadow: 2px 2px 3px white;
+}
+.encabezado_revistas:hover{
+    text-shadow: 1px 1px 4px #961443;
+}
+.card_container{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 250px;
+    height: 450px;
+    position: relative;
+    background: #202f73;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    padding: 25px;
+    transition: .3s;
+    color: #fffdf6;
+}
+.card:hover{
+    opacity: 80%;
+}
+.card_image{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #fffdf6;
+}
+.card_title{
+    padding: 15px;
+    font-size: 150%;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.card_text{
+    margin: 10px;
+    text-align:center;
+}
+/* PAGINA DE NAVEGACION ARTICULOS */
+.container2{
+    width: auto;
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    grid-template-columns: 1fr 3fr;
+    background-color: #fffdf6;
+    margin: 20px;
+}
+.sidenav_article{
+    grid-column: 1 / 2;
+    width: 180px;
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+    background-color: #202f73;
+    overflow-x: hidden;
+    padding: 20px;
+}
+.sidenav_article a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 115%;
+    font-weight: 200;
+    color: #fffdf6;
+    display: block;
+  }
+  .sidenav_article a:hover {
+    font-weight: 400;
+  }
+  .main_article{
+    grid-column: 2 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .main_article div{
+    width: 250px;
+    height: 250px;
+  }
+  /* PAGINA DE LECTURA ARTICULOS */
+  .pdf_article, .article_header, .aside_article{
+    grid-column: 2 / 3;
+  }
+  .aside_article{
+    border-radius: 5px;
+    height: fit-content;
+    position: relative;
+    z-index: 1;
+    background-color: lightgray;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+  .aside_article *{
+      padding: 10px;
+  }
+  .iframe_article{
+      position: relative;
+      padding-bottom: 66.66%;
+      height: 0;
+      overflow: hidden;
+  }
+  .iframe_article iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+/*RESPONSIVE CON MEDIA QUERIES*/
+@media only screen and (max-width: 650px){
+    .dropbtn {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+    }
+    .fa-bars{
+        font-size: 200%;
+    }
+    .dropdown {
+        position: inherit;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .dropcontent {
+        display: none;
+        position: absolute;
+        background-color: #961443;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+    .dropcontent a {
+        color: #fffdf6;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 125%;
+    }
+    .dropcontent a:hover {
+        color:#202f73;
+    }
+    .dropdown:hover .dropcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+    }
+    .dropdown:hover .dropbtn {
+        background-color: #fffdf6;
+    }
+    .nav_buttons a{
+        font-size: 125%;
+    }
+    .landing, .item{
+        grid-column: 1 / span 3;
+    }
+    .container{
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto repeat(3, 90vw) 1fr;
+        background-color: #fffdf6;
+    }
+    .navbar{
+        justify-content: space-between;
+        padding: 5px;
+    }
+    .contenido4, .contenido5, .contenido6{
+        display:none;
+    }
+    .boton_todos{
+        grid-row: 5 / 6;
+    }
+    .container2{
+        width: auto;
+        display: grid;
+        grid-gap: 20px;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #fffdf6;
+        margin: 10px;
+    }
+    .sidenav_article, .main_article{
+        grid-column: 1 / span 3;
+    }
+    .sidenav_article{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .sidenav_article a{
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+@media only screen and (min-width: 650px){
+    .container{
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto repeat(2, 45vw) 1fr;
+        background-color: #fffdf6;
+    }
+    .landing{
+        grid-column: 1 / span 2;
+    }
+    .contenido5, .contenido6{
+        display:none;
+    }
+    .boton_todos{
+        grid-column: 1 / span 2;
+        grid-row: 4/5;
+    }
+    .nav_links *{
+        font-size: 125%;
+    }
+    .nav_buttons a{
+        font-size: 125%;
+    }
+}
+@media only screen and (min-width: 770px){
+    .container{
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto repeat(2, 30vw) 1fr;
+        background-color: #fffdf6;
+    }
+    .landing{
+        grid-column: 1 / span 3;
+    }
+    .contenido5, .contenido6{
+        display:flex;
+    }
+    .boton_todos{
+        grid-column: 1 / span 3;
+        grid-row: 4/5;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .container{
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto repeat(2, 30vw) 1fr;
+        background-color: #fffdf6;
+    }
+    .landing{
+        grid-column: 1 / span 3;
+    }
+    .boton_todos{
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+    .nav_links *{
+        font-size: 150%;
+    }
+    .nav_buttons a{
+        font-size: 150%;
+    }
+}
