@@ -375,7 +375,129 @@ a:hover, a:focus, button:hover, button:focus{
     width: 100%;
     height: 100%;
   }
-/*RESPONSIVE CON MEDIA QUERIES*/
+
+/*PAGINA DE FORMULARIO DE SUSCRIPCION*/
+.formulario_container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.formulario_label{
+    display: block;
+    font-weight: 600px;
+    padding: 10px;
+    cursor: pointer;
+}
+.formulario_grupo_input{
+    position: relative;
+    overflow: hidden;
+}
+.formulario_input{
+    width: 85%;
+    /* max-width: 500px; */
+    background: aliceblue;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px 0 10px;
+    transition: .3s;
+}
+.formulario_input:focus{
+    border: 3px solid black;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.formulario_input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.formulario_input-error-activo{
+    display: inline-block;
+}
+.formulario_validacion-estado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formulario_checkbox{
+    margin-right: 10px;
+}
+.formulario_grupo-terminos,
+.formulario_mensaje,
+.formulario_grupo-btn-enviar{
+    grid-column: span 2;
+}
+.formulario_mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #f66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+.formulario_mensaje-activo{
+    display: block;
+}
+.formulario_mensaje p{
+    margin: 0;
+}
+.formulario_grupo-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulario_btn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.formulario_btn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+.formulario_mensaje-exito{
+    font-size: 14px;
+    color: blue;
+    display: none;
+}
+.formulario_mensaje-exito-activo{
+    display: block;
+}
+.formulario_grupo-correcto .formulario_validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_label{
+    color: #bb2929;
+}
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+    color: #bb2929;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_input{
+    border: 3px solid #bb2929;
+}
+
+/*MEDIA QUERIES*/
+
 @media only screen and (max-width: 650px){
     .dropbtn {
         display: inline-block;
@@ -490,6 +612,17 @@ a:hover, a:focus, button:hover, button:focus{
     .sidenav_article button{
         font-size: 1em;
         padding: 10px;
+    }
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .formulario_grupo-terminos,
+    .formulario_mensaje,
+    .formulario_grupo-btn-enviar{
+        grid-column: 1;
+    }
+    .formulario_btn{
+        width: 90%;
     }
 }
 @media only screen and (min-width: 770px){
