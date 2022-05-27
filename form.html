@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Science</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/f7ff485356.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav_logo"><a href="./index.html"><img src="./img/logo_placeholder.png" alt="International Science" height="70px"></a></div>
+        <div class="dropdown">
+            <div class="nav_links dropcontent">
+            <a href="./index.html">Inicio</a>
+            <a href="./articles.html">Artículos</a>
+            <a href="./index.html#journals">Revistas</a>
+            </div>
+            <a class="dropbtn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+            <div class="nav_buttons">
+                <a href="./subscription.html">Suscríbete</a>
+            </div>
+    </header>
+        <main class="formulario_container">
+        <form action="" class="formulario" id="formulario">
+            <div class="formulario_grupo" id="grupo_nombre">
+                <label for="nombre" class="formulario_label">Nombre</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" name="nombre" id="nombre" placeholder="Nombre">
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input-error">El nombre sólo puede contener letras y espacios</p>
+            </div>
+            <div class="formulario_grupo" id="grupo_apellido">
+                <label for="apellido" class="formulario_label">Apellido</label>
+                <div class="formulario_grupo_input">
+                    <input type="text" class="formulario_input" name="apellido" id="apellido" placeholder="Apellido">
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input-error">El apellido sólo puede contener letras y espacios</p>
+            </div>
+            <div class="formulario_grupo" id="grupo_email">
+                <label for="email" class="formulario_label">E-mail</label>
+                <div class="formulario_grupo_input">
+                    <input type="email" class="formulario_input" name="email" id="email" placeholder="ejemplo@tucorreo.com">
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input-error">El email sólo puede contener letras, números, puntos, guiones y guiones bajos. Debe incluir un dominio existente. Ejemplo: ejemplo@tucorreo.com</p>
+            </div>
+            <div class="formulario_grupo" id="grupo_email2">
+                <label for="email2" class="formulario_label">Confirmar e-mail</label>
+                <div class="formulario_grupo_input">
+                    <input type="email2" class="formulario_input" name="email2" id="email2" placeholder="ejemplo@tucorreo.com">
+                    <i class="formulario_validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario_input-error">Los e-mail ingresados no coinciden</p>
+            </div>
+            <div class="formulario_grupo" id="grupo_terminos">
+                <label>
+                    <input type="checkbox" name="terminos" id="terminos" class="formulario_checkbox">
+                    Acepto los Términos y Condiciones
+                </label>
+            </div>
+            <div class="formulario_mensaje" id="formulario_mensaje">
+                <p><i class="fa-solid fa-circle-exclamation"></i> <b>Error: </b>Por favor rellena el formulario correctamente.</p>
+            </div>
+            <div class="formulario_grupo formulario_grupo-btn-enviar">
+                <button type="submit" class="formulario_btn">Enviar</button>
+                <p class="formulario_mensaje-exito" id="formulario_mensaje-exito"><i class="fa-solid fa-circle-check"></i> El formulario se ha enviado exitosamente!</p>
+            </div>
+        </form>
+    </main>
+    <script src="./js/formulario.js"></script>
+    <footer class="footer">
+        <div class="footer_content">
+            <h3 class="footer_head">International Science</h3>
+            <ul class="footer_social">
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <div class="footer_links">
+                <a href="http://">Aviso legal y política de cookies</a>
+            </div>
+            <p class="footer_cr">Copyright &copy;2022 - Braian Tadei</p>
+        </div>
+    </footer>
+</body>
+</html>
